@@ -1,0 +1,59 @@
+/* Add this to your CSS stylesheet */
+
+.highest-voted-card-cont {
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    text-align: center;
+    width: 100vw;
+}
+.highest-voted-card img{
+    width: 50%;
+    height: 100%;
+ }
+
+.highest-voted-card-horizontal-container {
+    margin-top: 20px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;          
+  }
+  
+  .highest-voted-card {
+    margin: 50px; 
+    width: 30vw;
+  }
+  
+#food-item-title {
+    font-size: 6vw;
+}
+#food-item-subtitle {
+    font: 4vw;
+}
+
+@media (max-width: 1600px) {
+    #food-item-title {
+        font-size: 7vw;
+    }
+    #food-item-subtitle {
+        font-size: 3vw;
+    }
+    .highest-voted-card-cont {
+        top: 150px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .highest-voted-card-horizontal-container {
+        display: block;
+        justify-content: center;       
+      }
+    .highest-voted-card {
+        width: 100%;
+        margin: 0;
+    }
+    .highest-voted-card-cont {
+        top: 100px;
+    }
+}

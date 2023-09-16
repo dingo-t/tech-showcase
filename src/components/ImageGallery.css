@@ -1,0 +1,52 @@
+
+.gallery-container{
+    width: 1600px;
+    height: 100%;
+    overflow: hidden;
+    border: 20px solid #0400ff;
+    border-radius: 8px;
+    position: relative;
+}
+.gallery-wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.gallery-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 850px) {
+    .gallery-container{
+    border: 0px solid #ffffff;
+    border-radius: 0px;
+    }
+}

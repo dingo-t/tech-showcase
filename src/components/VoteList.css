@@ -1,0 +1,92 @@
+.vote-card-container {
+    margin-top: 300px
+}
+
+.vote-list {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.vote-list-ul {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 50px;
+    width: 50vw;
+}
+
+.vote-list-li {
+    display: flex;
+    background: rgba(0, 60, 255, 0.2);
+    padding: 10px 100px;
+    color: #000000;
+    margin: 10px 0;
+    font-size: 2vw;
+}
+
+.vote-list-li:nth-child(1) {
+    background: rgba(0, 26, 141, 0.6);
+}
+.vote-list-li:nth-child(2) {
+    background: rgba(0, 30, 182, 0.4);
+}
+.vote-list-li:nth-child(3) {
+    background: rgba(0, 42, 255, 0.3);
+}
+ 
+
+.list-text {
+    position: relative;
+    left: -60px;
+}
+  
+.list-votes {
+    position: absolute;
+    right: 100px; 
+}
+  
+#list-title {
+    font-size: 4vw;
+}
+
+
+
+@media (max-width: 1800px) {
+    .vote-list-li {
+        font-size: 1.5vw;
+    }
+    .list-votes {
+        right: 50px;
+    }
+    .vote-card-container {
+        margin-top: 170px
+    }
+}
+
+@media (max-width: 1000px) {
+    #list-title {
+        font-size: 5vw;
+    }
+    .vote-list-ul {
+        width: 80vw;
+    }
+    .vote-card-container {
+        margin-top: 200px
+    }
+}
+
+@media (max-width: 720px) {
+    #list-title {
+        font-size: 5vw;
+    }
+    .vote-list-ul {
+        width: 80vw;
+    }
+    .vote-card-container {
+        margin-top: 150px
+    }
+}
+
+

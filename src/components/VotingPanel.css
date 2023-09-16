@@ -1,0 +1,46 @@
+.voting-title {
+    margin-bottom: 5%;
+
+}
+
+.voting-title h1 {
+    font-size: 4.5vw;   
+}
+
+.voting-title p {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.current-votes {
+    margin-top: 5%;
+    font-size: 1vw;
+}
+
+.voting-cont {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.vote-notice {
+    font-size: 50px;
+    color: rgb(0, 153, 0);
+}
+
+
+@media (max-width: 800px) {
+    .voting-title h1 {
+        font-size: 7vw;   
+    }
+    
+    .voting-title p {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .current-votes {
+        font-size: 1.5vw;
+    }
+    .voting-cont {
+        margin-bottom: 50px;
+    }
+}

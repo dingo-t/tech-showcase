@@ -1,0 +1,162 @@
+.container {
+    position: relative;
+    top: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f0f0f0; /* Optional: Set a background color for the container */
+    margin-bottom: 200px;
+  }
+  
+.food-image {
+    max-width: 60vw; /* Adjust the width of the image as needed */
+    max-height: 80vw;
+    margin-left: 0px; /* Adjust the margin as needed */
+  }
+  
+.text-cont {
+    position: relative;
+    width: 100%;
+    top: -2.5vw;
+    text-align: center;
+  }
+
+.title {
+    font-size: 2.5vw; 
+  }
+
+.name {
+    font-size: 1vw;
+}
+
+.food-info {
+ 
+    text-align: center;
+}
+
+.diet-info-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.dietary-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    max-width: 85%;
+}
+
+.diet-info-title h1  {
+    font-size: 3vw;
+}
+
+.diet-info-title p  {
+    font-size: .8vw;
+}
+  
+.gluten, .vegan, .vegetarian {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.gluten-logo, .vegan-logo, .vegetarian-logo {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 7vw;
+}
+
+.ingredients {
+    position: relative;
+}
+
+.ingredients h2 {
+    margin-bottom: 50px;
+    font-size: 3vw;
+}
+
+.ingredients ul{
+   font-size: 2vw;
+}
+
+.profile-cont {
+    margin-top: 100px;
+}
+
+.img-gallery-section {
+    display: flex;
+    justify-content: center;
+    height: 50vw;
+    margin-top: 2%;
+    margin-bottom: 50px;
+}
+
+.voting-panel-section {
+    display: flex;
+    justify-content: center;
+}
+  
+@media (max-width: 1800px) {
+    .diet-info-title h1  {
+        font-size: 5vw;
+    }
+
+    .diet-info-title p  {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 1500px) {
+    .title {
+        font-size: 5vw; 
+      }
+    
+    .name {
+        font-size: 3vw;
+    }
+    .ingredients h2 {
+        margin-bottom: 20px;
+        font-size: 3vw;
+    }
+    .gluten, .vegan, .vegetarian {
+        font-size: 2vw;
+    }
+    .gluten-logo, .vegan-logo, .vegetarian-logo {
+        max-width: 10vw;
+    }
+    .container {
+        margin-bottom: 100px;
+      }
+    .diet-info-title {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 2vw;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .ingredients h2 {
+        margin-bottom: 50px;
+        font-size: 4vw;
+    }
+    .ingredients ul{
+       font-size: 3vw;
+    }
+    .ingredients h2 {
+        margin-bottom: 10px;
+        font-size: 5.5vw;
+    }
+    .gluten-logo, .vegan-logo, .vegetarian-logo {
+        max-width: 16vw;
+    }
+    .diet-info-title h1  {
+        font-size: 6vw;
+    } 
+    .diet-info-title p  {
+        font-size: 1.5vw;
+    }
+    .profile-cont {
+        margin-top: 50px;
+    }   
+}
