@@ -6,10 +6,10 @@ import HighestVoted from '../components/HighestVoted';
 function Votes() {
   return (
     <>
-    <div classname='vote-page-cont'>
+   
         <HighestVoted></HighestVoted>
         <VoteList></VoteList>
-    </div>
+ 
     </>
   );
 }

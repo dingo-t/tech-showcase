@@ -21,13 +21,12 @@ function Food1() {
     return item ? item.votes : 'ID not found'; 
   };
 
-  /* due to React code being asynchronous it is important to check if the vote data has been 
-    fetched from the database to prevent VoteDisplay being set as undefined */
-  if (votesdata.length > 0) {
-    console.log('goon')
-    VoteDisplay = findVoteValueById(id);
-  }
   
+
+    //VoteDisplay = findVoteValueById(id);
+  
+  
+  console.log(votesdata)
   return (
     <>
       <FoodItem 

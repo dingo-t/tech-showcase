@@ -24,7 +24,6 @@ function Food5() {
   /* due to React code being asynchronous it is important to check if the vote data has been 
     fetched from the database to prevent VoteDisplay being set as undefined */
   if (votesdata.length > 0) {
-    console.log('goon')
     VoteDisplay = findVoteValueById(id);
   }
   

@@ -46,7 +46,7 @@ function App() {
         console.error('Error fetching data:', error);
       });
   }, []);
-
+  console.log(votes)
 
   return (
   // the entire app is wrapped in the context providers so that any page can access the contexts
