@@ -1,6 +1,6 @@
 .background {
-    background-image: url(https://i.postimg.cc/QdtnFR5Y/mads-schmidt-rasmussen-o-JDUFteat78-unsplash.jpg);
-    background-size: cover;
+    background: radial-gradient(rgb(0, 0, 255), rgb(0, 195, 255));
+    background-size: auto;
     position: absolute;
     height: 3600px;
     z-index: -1;
@@ -30,8 +30,8 @@
         font-size: 50px;
     }
 }
-@media (max-width: 30px) {
+@media (max-width: 430px) {
     .food-exhibits-title {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
