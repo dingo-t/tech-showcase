@@ -3,8 +3,10 @@
   background: #fff;
 }
 
-h1 {
+.cards h1 {
   text-align: center;
+  font-family: 'PT Sans', 'Roboto', 'sans-serif';
+  font-size: 3.5vw;
 }
 
 .cards__container {
@@ -82,6 +84,7 @@ h1 {
   color: #252e48;
   font-size: 25px;
   line-height: 24px;
+  font-family: 'PT Sans', 'Roboto', 'sans-serif';
 }
 
 @media only screen and (min-width: 1200px) {

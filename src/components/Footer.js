@@ -20,7 +20,7 @@ function Footer() {
           <Link to='/privacy' className='privacy-link'>
             Privacy Policy 
           </Link>
-          <small class='privacy-link'>Daniel Horne © 2023</small>
+          <small class='privacy-link'>Font Awesome by Dave Gandy - http://fontawesome.io</small>
         </div>
       </section>
     </div>

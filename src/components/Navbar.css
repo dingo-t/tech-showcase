@@ -43,10 +43,12 @@
 
 .nav-links {
   font-size: 1.6rem;
+  font-family: 'PT Sans', 'Roboto', 'sans-serif';
 }
 
 .navbar-logo {
   font-size: 3rem;
+  font-family: 'PT Sans', 'Roboto', 'sans-serif';
 }
 
 .nav-sign-up {

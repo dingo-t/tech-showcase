@@ -1,5 +1,6 @@
 .vote-card-container {
     margin-top: 300px;
+    
 }
 
 .vote-list {
@@ -7,6 +8,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    
 }
 
 .vote-list-ul {
@@ -53,6 +55,7 @@
   
 #list-title {
     font-size: 4vw;
+    font-family: 'PT Sans', 'Roboto', 'sans-serif';
 }
 
 

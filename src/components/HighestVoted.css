@@ -10,6 +10,9 @@
 .highest-voted-card img{
     width: 50%;
     height: 100%;
+    box-shadow: 0 10px 20px rgba(56, 125, 255, 0.27);
+    filter: drop-shadow(0 6px 20px rgba(0, 89, 255, 0.117));
+    border-radius: 20px;
  }
 
 .highest-voted-card-horizontal-container {
@@ -22,6 +25,7 @@
   .highest-voted-card {
     margin: 50px; 
     width: 30vw;
+    
   }
   
   .highest-voted-card p {
@@ -31,6 +35,7 @@
 
 #food-item-title {
     font-size: 6vw;
+    font-family: 'PT Sans', 'Roboto', 'sans-serif';
 }
 #food-item-subtitle {
     font-size: 2vw;
