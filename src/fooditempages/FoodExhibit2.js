@@ -33,7 +33,7 @@ function Food2() {
       // values are passed into the FoodItem component 
       title='Mousse Balls'
       name='Russel Sprout'
-      MainImg='../images/Mousse Balls2.png'
+      MainImg='../images/MousseBalls2.png'
       MainImgAlt='Mousse Balls image'
       
       // This props can be removed to display the corresponding icon 
@@ -49,10 +49,10 @@ function Food2() {
       
       votes={VoteDisplay}
 
-      GalleryImg1={'../images/Mousse Balls1.png'}
-      GalleryImg2={'../images/Mousse Balls2.png'}
-      GalleryImg3={'../images/Mousse Balls3.png'}
-      GalleryImg4={'../images/Mousse Balls4.png'}
+      GalleryImg1={'../images/MousseBalls1.png'}
+      GalleryImg2={'../images/MousseBalls2.png'}
+      GalleryImg3={'../images/MousseBalls3.png'}
+      GalleryImg4={'../images/MousseBalls4.png'}
 
       /* The id is passed down to the vote function so that it knows for 
       which item the vote should be added to */
