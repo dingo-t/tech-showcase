@@ -24,11 +24,17 @@
     width: 30vw;
   }
   
+  .highest-voted-card p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+  }
+
 #food-item-title {
     font-size: 6vw;
 }
 #food-item-subtitle {
-    font: 4vw;
+    font-size: 2vw;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 @media (max-width: 1600px) {

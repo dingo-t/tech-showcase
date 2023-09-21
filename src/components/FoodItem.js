@@ -17,30 +17,34 @@ function FoodItem(props) {
             <h2 className='name'>{props.name}</h2>
         </div>
         {/*A large image of the food item displayed to the side of the title and creator name */}
-        <img src={props.MainImg} alt={props.MainImgAlt} className="food-image" />
+        <img src={props.MainImg} alt={props.MainImgAlt} className="food-image" loading='lazy'/>
     </div>
     <div className='diet-info-title'>
         <h1>Dietary Information</h1>
-        <p>The information displayed here may not always be up to date, always check with the stall owner if you have any dietary requirments</p>
+        <p>The information displayed here may not always be up to date, always 
+            check with the stall owner if you have any dietary requirments</p>
     </div>
         <div className='food-info'>
-            {/* Three icons that can be shown or hidden individually to show the dietary requirments that a food item satisfies*/}
-            {/* They are hidden when a function that sets their display value to none is passed in when the component is used in Food pages*/}
+            {/* Three icons that can be shown or hidden individually to show the dietary requirments 
+            that a food item satisfies*/}
+            {/* They are hidden when a function that sets their display value to none is passed 
+            in when the component is used in Food pages*/}
             <div className='dietary-information'>    
                 <div className='gluten' style={props.GlutenStyle}>
-                    <img className='gluten-logo' src='../images/gluten-free.png' alt=''></img>
+                    <img className='gluten-logo' src='../images/gluten-free.png' alt='' loading='lazy'></img>
                     <h2>Gluten Free</h2>
                 </div>
                 <div className='vegan' style={props.VeganStyle}>
-                    <img className='vegan-logo' src='../images/vegan.png' alt=''></img>
+                    <img className='vegan-logo' src='../images/vegan.png' alt='' loading='lazy'></img>
                     <h2>Vegan</h2>
                 </div>
                 <div className='vegetarian' style={props.VegetarianStyle}>
-                    <img className='vegetarian-logo' src='../images/vegetarian.png' alt=''></img>
+                    <img className='vegetarian-logo' src='../images/vegetarian.png' alt='' loading='lazy'></img>
                     <h2>Vegetarian</h2>
                 </div>
             </div>
-            {/* A list of ingrediants that are passed in when the component is called in the food page */}
+            {/* A list of ingrediants that are passed in when the 
+            component is called in the food page */}
             <div className='ingredients'>
                 <h2>Ingredients List</h2>
                 <ul>
@@ -57,12 +61,14 @@ function FoodItem(props) {
                 </ul>
             </div>  
     </div>
-    {/* This is a card with a placeholder image and the name of the creator of the dish*/}
+    {/* This is a card with a placeholder image 
+    and the name of the creator of the dish*/}
     <div className='profile-cont'>
         <h1>Creator</h1>
         <ProfileCardItem src='../images/profile.png' text={props.name} path='/' />
     </div>
-    {/* This is an image gallery that automatically transitions through various photos of the item*/}
+    {/* This is an image gallery that automatically transitions 
+    through various photos of the item*/}
     <div className='img-gallery-section'>
         <ImageGallery 
         GalleryImg1={props.GalleryImg1}
@@ -71,7 +77,8 @@ function FoodItem(props) {
         GalleryImg4={props.GalleryImg4}
         />
     </div>
-    {/*This is a voting panel component that allows the user to vote and see the amount of votes that the food item has */}
+    {/*This is a voting panel component that allows the user to vote and 
+    see the amount of votes that the food item has */}
     <div className='voting-panel-section'>
         <VotingPanel
          id={props.id}

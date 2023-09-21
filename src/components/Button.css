@@ -1,5 +1,6 @@
 :root {
   --primary: #fff;
+  --btn-colour: rgb(38, 0, 255);
 }
 
 .btn {
@@ -11,16 +12,25 @@
 }
 
 .btn--vote {
-  background-color: rgb(38, 0, 255);
+  background-color: var(--btn-colour);
   color: #ffffff;
-  border: 5px solid rgb(38, 0, 255);
+  border: 5px solid var(--btn-colour);
   border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn--vote:hover {
+  background-color: #242424;
+  border-color: #242424;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 1);
 }
 
 .btn--primary {
   background-color: var(--primary);
   color: #242424;
   border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
 }
 
 .btn--outline {
@@ -53,6 +63,7 @@
   width: fit-content;
 }
 
+
 .btn--large:hover,
 .btn--medium:hover {
   transition: all 0.3s ease-out;
@@ -60,6 +71,15 @@
   color: #242424;
   transition: 250ms;
 }
+
+.btn--primary:hover{
+  transition: all 0.3s ease-out;
+  background-color: #242424;
+  color: #fff;
+  border: #242424;
+  transition: 250ms;
+}
+
 
 @media (max-width: 800px) {
   .btn--vote {

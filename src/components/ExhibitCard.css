@@ -22,6 +22,8 @@ a {
     font-size: 25px;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
   
 .input-container {
@@ -37,7 +39,7 @@ a {
     border: none;
     outline: none;
     border-radius: 60px;
-    background: rgba(255, 255, 255, 1);
+    background: rgb(255, 255, 255);
     padding: 24px 50px;
     font-size: 20px;
     color: #191b21;

@@ -11,7 +11,9 @@ const SIZES = ['btn--medium', 'btn--large', 'btn--huge', 'btn--vote'];
 
 
 export const Button = ({
-  // An object with information on what the button should do on click and how it should be styled
+  /* An object with information on what the button should do on 
+  click and how it should be styled */
+  
   // This line defines the values in the object that should be accepted
   children,
   type,

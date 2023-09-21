@@ -18,7 +18,7 @@ function Cards() {
               path='/food1'
             />
             <CardItem
-              src='../images/Mousse Balls2.png'
+              src='../images/MousseBalls2.png'
               text='Mousse Balls'
               path='/food2'
             />
@@ -47,4 +47,5 @@ function Cards() {
   );
 }
 
-export default Cards; // Exports the Card component for use in other parts of the web app
+export default Cards; // Exports the Card component
+// for use in other parts of the web app

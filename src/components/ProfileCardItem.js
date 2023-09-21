@@ -13,6 +13,7 @@ function ProfileCardItem(props) {
               className='profile_card__item__img'
               alt='Food'
               src={props.src}
+              loading='lazy'
             />
           </figure>
           <div className='profile_card__item__info'>

@@ -40,6 +40,12 @@
   margin-bottom: 16px;
 }
 
+
+.social-logo:hover, .privacy-link:hover {
+  color: #3a3744;
+  transition: 500ms;
+}
+
 .privacy-link {
   color: #fff;
   margin-bottom: 16px;

@@ -5,7 +5,9 @@ import {voteContext} from '../App';
 
 
 function Food1() {
-  // This function allows icons to be removed depending on the deitary requirments a food item accomodates 
+  /* This function allows icons to be removed depending on the
+   deitary requirments a food item accomodates */
+  
   const RemoveFromViewport = {display: 'none'};
 
   // Receives vote array from App.js
@@ -15,18 +17,18 @@ function Food1() {
   const id = '1';
   let VoteDisplay = '';
 
-  // Function finds the votes of the food item by matching the id declared above with an id in the votes array
+  /* Function finds the votes of the food item by matching the 
+  id declared above with an id in the votes array */
   const findVoteValueById = (id) => {
     const item = votesdata.find(item => item.id === id);
     return item ? item.votes : 'ID not found'; 
   };
 
-  
 
-    //VoteDisplay = findVoteValueById(id);
+  if (votesdata.length > 0) {
+    VoteDisplay = findVoteValueById(id);
+  }
   
-  
-  console.log(votesdata)
   return (
     <>
       <FoodItem 
@@ -50,7 +52,8 @@ function Food1() {
       GalleryImg3={'../images/LemonTarts.jpg'}
       GalleryImg4={'../images/lemontartu.png'}
 
-      // The id is passed down to the vote function so that it knows for which item the vote should be added to 
+      /* The id is passed down to the vote function so that it knows for 
+      which item the vote should be added to */
       id={'1'}
       
       />

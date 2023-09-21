@@ -53,7 +53,8 @@ function Food4() {
       GalleryImg3={'../images/ChocCube1.png'}
       GalleryImg4={'../images/ChocCube2.png'}
 
-      // The id is passed down to the vote function so that it knows for which item the vote should be added to 
+       /* The id is passed down to the vote function so that it knows for 
+      which item the vote should be added to */
       id={'4'}
       
       />

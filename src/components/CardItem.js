@@ -7,13 +7,15 @@ function CardItem(props) {
   return (
     <> {/* */}
       <li className='cards__item'>
-        {/* The card is wrapped in a Link tag so that anywhere the user clicks will link to the page*/}
+        {/* The card is wrapped in a Link tag so that anywhere the user 
+            clicks will link to the page*/}
         <Link className='cards__item__link' to={props.path}> 
           <figure className='cards__item__pic-wrap'>
             <img
               className='cards__item__img'
               alt='Food Image'
               src={props.src}
+              loading='lazy'
             />
           </figure>
           <div className='cards__item__info'>

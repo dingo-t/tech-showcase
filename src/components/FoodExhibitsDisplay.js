@@ -13,7 +13,8 @@ return (
             <div className='food-exhibits-title'>
                 <h1>Food exhibits</h1>
             </div>
-            {/* The Exhibit Cards component is called within this component*/}
+            {/* The Exhibit Cards component is called 
+            within this component*/}
             <div className='exhibit-cards-container'>
                 <ExhibitCards/>
             </div>

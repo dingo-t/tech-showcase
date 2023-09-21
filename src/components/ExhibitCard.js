@@ -30,14 +30,15 @@ function ExhibitCards() {
                     onChange={handleSearch}
                 />
             </div>
-            {/* this container displays the cards that have names that have been inputed to the text box */}
+            {/* this container displays the cards that have names 
+            that have been inputed to the text box */}
             <div className='card-cont'>
                 {filteredCards.map((card) => (
                     <div key={card.id}>
                         {/* links to the food items page */}
                         <a href={card.link}>
                             {/* iamge of the food item */}
-                            <img src={card.image} alt={card.text} />
+                            <img src={card.image} alt={card.text} loading='lazy'/>
                             {/* name of the food item*/}
                             <div className='card-text'>{card.text}</div>
                         </a>

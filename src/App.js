@@ -22,7 +22,7 @@ function App() {
   // this array holds data values for food item to help with displaying cards of the item
   const [cards, setCards] = useState([
     { id: '1', image: '../images/lemontart2u.png', link: '/food1', text: 'Lemon Tart',},
-    { id: '2', image: '../images/Mousse Balls2.png', link: '/food2', text: 'Mousse Balls',},
+    { id: '2', image: '../images/MousseBalls2.png', link: '/food2', text: 'Mousse Balls',},
     { id: '3', image: '../images/ChocEgg1.png', link: '/food3', text: 'White Chocolate Eggs',},
     { id: '4', image: '../images/ChocCube1.png', link: '/food4', text: 'Chocolate Cubes',},
     { id: '5', image: '../images/coconutballs1.png', link: '/food5', text: 'Coconut Balls',},
@@ -30,32 +30,33 @@ function App() {
   
   const [votes, setVotes] = useState('');
 
-  // This function fetches the votes array from a database using a fetch request to a php file
-  // it runs when any page of the website is rendered 
+  /* This function fetches the votes array from a database 
+     using a fetch request to a php file
+     it runs when any page of the website is rendered */
 
   useEffect(() => {
     fetch('http://localhost/FetchVoteData.php')
-      // response is encoded to json
+      // Response is encoded to json
       .then(response => response.json())
-      // when the data has been fetched it is passed into the votes array
+      // When the data has been fetched it is passed into the votes array
       .then(data => {
         setVotes(data);
       })
-      // any errors are catched and logged to console
       .catch(error => {
-        console.error('Error fetching data:', error);
+        
       });
   }, []);
-  console.log(votes)
+
 
   return (
-  // the entire app is wrapped in the context providers so that any page can access the contexts
+  // The entire app is wrapped in the context providers so that any page can access the contexts
   <Mycontext.Provider value={cards}>
     <voteContext.Provider value={votes}>
       <>
         {/*The routing for each page is handled here */}
         <Router>
-          {/* The Navbar and Footer are outside the Routes so that they are visible regardless of the current path*/}
+          {/* The Navbar and Footer are outside the Routes so that they are
+           visible regardless of the current path*/}
           <Navbar/>
           <Routes>
             <Route path='/' exact element={<Home></Home>}/>

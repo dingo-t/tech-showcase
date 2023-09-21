@@ -11,7 +11,8 @@ function HeroSection() {
     // This container contains all of the content for the component
     <div className="hero-container">
           
-      {/* The video background code is commented out since i am using a css image background currently*/}   
+      {/* The video background code is commented out since 
+      i am using a css image background currently*/}   
       {/* <video src="/videos/video-1.mp4" autoPlay loop muted />  */}
       <h1>Vote for your favourite exhibition</h1>
       <p>23rd August 2023</p>

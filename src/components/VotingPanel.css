@@ -9,14 +9,16 @@
 
 .voting-title p {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
-.current-votes {
+.current-votes h1{
     margin-top: 5%;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
 }
-
 .voting-cont {
     text-align: center;
     margin-bottom: 200px;
@@ -25,6 +27,8 @@
 .vote-notice {
     font-size: 50px;
     color: rgb(0, 153, 0);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
 }
 
 

@@ -36,13 +36,17 @@
   margin-right: .5vw;
 }
 
+.nav-links:hover, .navbar-logo:hover {
+  color: #8a8a8a;
+  transition: 500ms ease-in-out;
+}
+
 .nav-links {
   font-size: 1.6rem;
 }
 
 .navbar-logo {
   font-size: 3rem;
-
 }
 
 .nav-sign-up {
